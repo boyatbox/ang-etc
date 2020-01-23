@@ -1,0 +1,6 @@
+POST body sizes for some of the more popular HTTP servers:
+
+Ngix (largest web server market share as of April 2019) - default 1MB, no practical maximum (2**63)
+Apache - maximum 2GB, no default documented
+IIS - default 28.6MB for the request length, 2048 bytes for the query string; maximum undocumented
+InfluxDB - default ~25MB, maximum undocumented
