@@ -12,3 +12,6 @@ bigint=(9,223,372,036,854,775,807)=8 Bytes
 int=(2,147,483,648)=4 Bytes
 smallint=(32,767)=2 Bytes
 tinyint=0 to 255=1 Byte
+
+4. Identity
+[EmailAddressID] [int] IDENTITY (1, 1) NOT NULL
