@@ -15,3 +15,6 @@ tinyint=0 to 255=1 Byte
 
 4. Identity
 [EmailAddressID] [int] IDENTITY (1, 1) NOT NULL
+
+5. Default:
+[ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_AddressType_ModifiedDate] DEFAULT (GETDATE())
