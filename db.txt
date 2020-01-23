@@ -6,3 +6,9 @@ CONSTRAINT [CK_Product_SellEndDate] CHECK (([SellEndDate] >= [SellStartDate]) OR
 CONSTRAINT [CK_TransactionHistory_TransactionType] CHECK (UPPER([TransactionType]) IN ('W', 'S', 'P'))
 CONSTRAINT [CK_Person_PersonType] CHECK ([PersonType] IS NULL OR UPPER([PersonType]) IN ('SC', 'VC', 'IN', 'EM', 'SP', 'GC'))
 CONSTRAINT [CK_Employee_Gender] CHECK (UPPER([Gender]) IN ('M', 'F')), -- Male or Female
+
+3. smallint=>pf,vs,app
+bigint=(9,223,372,036,854,775,807)=8 Bytes
+int=(2,147,483,648)=4 Bytes
+smallint=(32,767)=2 Bytes
+tinyint=0 to 255=1 Byte
