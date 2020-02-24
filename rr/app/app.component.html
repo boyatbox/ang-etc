@@ -1,0 +1,31 @@
+<div class="portfolio">
+    <angular2-multiselect [data]="portfolioList" [(ngModel)]="selectedPortfolio"
+        [settings]="portfolioDropdownSettings"
+        (onSelect)="onItemSelect($event)"
+        (onDeSelect)="OnItemDeSelect($event)"
+        (onSelectAll)="onSelectAll($event)"
+        (onDeSelectAll)="onDeSelectAll($event)">
+    </angular2-multiselect>
+</div>
+
+
+<div class="valuestream">
+    <angular2-multiselect [data]="valuestreamList" [(ngModel)]="selectedValuestream"
+        [settings]="valuestreamDropdownSettings"
+        (onSelect)="onItemSelect($event)"
+        (onDeSelect)="OnItemDeSelect($event)"
+        (onSelectAll)="onSelectAll($event)"
+        (onDeSelectAll)="onDeSelectAll($event)"
+        (onOpen)="OnOpen($event)">
+    </angular2-multiselect>
+</div>
+
+<div class="application">
+    <angular2-multiselect [data]="appList" [(ngModel)]="selectedApp"
+        [settings]="appDropdownSettings"
+        (onSelect)="onItemSelect($event)"
+        (onDeSelect)="OnItemDeSelect($event)"
+        (onSelectAll)="onSelectAll($event)"
+        (onDeSelectAll)="onDeSelectAll($event)">
+    </angular2-multiselect>
+</div>
